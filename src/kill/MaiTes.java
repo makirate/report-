@@ -1,12 +1,12 @@
-package jp.ac.uryukyu.ie.e185708;
+package kill;
 
 /**
  * Created by tnal on 2016/11/13.
  */
-public class Main {
+public class MaiTes {
     public static void main(String[] args){
-        Hero hero = new Hero("勇者", 10, 5);;
-        Enemy enemy = new Enemy("スライム", 6, 3);
+        HerTes hero = new HerTes("勇者", 10, 5);
+        EneTes enemy = new EneTes("スライム", 6, 3);
 
         System.out.printf("%s vs. %s\n", hero.getName(), enemy.getName());
 
