@@ -8,7 +8,7 @@ package kill;
  *  boolean dead; //敵の生死状態。true=死亡。
  * Created by tnal on 2016/11/13.
  */
-public class EneTes {
+public class EnemyTest {
     String name;
     int hitPoint;
     int attack;
@@ -20,7 +20,7 @@ public class EneTes {
      * @param maximumHP モンスターのHP
      * @param attack モンスターの攻撃力
      */
-    public EneTes (String name, int maximumHP, int attack) {
+    public EnemyTest(String name, int maximumHP, int attack) {
         this.name = name;
         hitPoint = maximumHP;
         this.attack = attack;
@@ -45,7 +45,7 @@ public class EneTes {
      * attackに応じて乱数でダメージを算出し、hero.wounded()によりダメージ処理を実行。
      * @param hero 攻撃対象
      */
-    public void attack(HerTes hero) {
+    public void attack(HeroTest hero) {
         for (int i = 0; i == 0 && isDead() == false; i++) {
             int damage = (int) (Math.random() * attack);
             System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, hero.getName(), damage);

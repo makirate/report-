@@ -3,10 +3,10 @@ package kill;
 /**
  * Created by tnal on 2016/11/13.
  */
-public class MaiTes {
+public class MainTest {
     public static void main(String[] args){
-        HerTes hero = new HerTes("勇者", 10, 5);
-        EneTes enemy = new EneTes("スライム", 6, 3);
+        HeroTest hero = new HeroTest("勇者", 10, 5);
+        EnemyTest enemy = new EnemyTest("スライム", 6, 3);
 
         System.out.printf("%s vs. %s\n", hero.getName(), enemy.getName());
 
